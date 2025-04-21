@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #180909;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.start-screen, .quiz-screen {
+  text-align: center;
+}
+
+h1 {
+  color: #b57c3b;
+  font-size: 3rem;
+}
+
+.highlight {
+  color: #c3db4b;
+}
+
+button {
+  background-color: #c3db4b;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.question-box {
+  background-color: #a7ba2f;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.options button {
+  background-color: #b4c834;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.options button.correct {
+  background-color: #16a34a;
+  color: white;
+}
+
+.options button.wrong {
+  background-color: #dc2626;
+  color: white;
+}
+
+.feedback {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+.correct-text {
+  color: #16a34a;
+}
+
+.wrong-text {
+  color: #dc2626;
+}
+
+.next-button {
+  margin-top: 20px;
+}
