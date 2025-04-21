@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.score-card {
+  background-color: #1e0e0e;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 15px;
+  width: 250px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #ffb6c1;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.score-card h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.score {
+  display: inline-block;
+  background-color: #ffb6c1;
+  color: #1e0e0e;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
