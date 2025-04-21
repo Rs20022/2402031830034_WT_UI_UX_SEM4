@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>History Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="start-screen" id="startScreen">
+    <h1><span class="highlight">NEXT</span> <span class="title">Quiz</span></h1>
+    <button onclick="startQuiz()">NEXT question</button>
+  </div>
+
+  <div class="quiz-screen" id="quizScreen" style="display: none;">
+    <div class="question-box" id="questionText">
+      who called Subhash chandra bose Desh nayak?
+    <div class="options">
+      <button onclick="checkAnswer(this)">lala lajpat rai</button>
+      <button onclick="checkAnswer(this)">Mahatma Gandhi</button>
+      <button onclick="checkAnswer(this,true)">Ravindranath tajore</button>
+      <button onclick="checkAnswer(this)">Bal Gangadhar tilak</button>
+    </div>
+    <div class="feedback" id="feedback"></div>
+    <button class="next-button" onclick="nextQuestion()"> <a href="score.html" class="btn">submit</a></button>
+    <link rel="stylesheet" href="pg2.html">
+  </div>
+
+</body>
+
+<script>
+  function startQuiz() {
+    document.getElementById("startScreen").style.display = "none";
+    document.getElementById("quizScreen").style.display = "block";
+  }
+
+  function checkAnswer(btn, correct = false) {
+    let feedback = document.getElementById("feedback");
+    let buttons = document.querySelectorAll(".options button");
+
+    buttons.forEach(b => b.disabled = true);
+
+    if (correct) {
+      btn.classList.add("correct");
+      feedback.textContent = "Correct..";
+      feedback.className = "feedback correct-text";
+    } else {
+      btn.classList.add("wrong");
+      feedback.textContent = "Wrong..";
+      feedback.className = "feedback wrong-text";
+    }
+  }
+
+  
+   
+</script>
+</html>
